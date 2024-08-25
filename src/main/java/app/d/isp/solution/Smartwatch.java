@@ -1,6 +1,6 @@
 package main.java.app.d.isp.solution;
 
-public class Smartwatch implements BluetoothDevice, Music{
+public class Smartwatch implements BluetoothDevice, Music {
 
 	@Override
 	public void enableBluetooth() {
@@ -16,13 +16,13 @@ public class Smartwatch implements BluetoothDevice, Music{
 
 	@Override
 	public void turnOffDevice() {
-		//metodo para apagar
+		// metodo para apagar
 	}
 
 	@Override
 	public void playMusic() {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 }

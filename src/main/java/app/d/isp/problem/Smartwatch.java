@@ -16,7 +16,7 @@ public class Smartwatch implements BluetoothDevice {
 
 	@Override
 	public void turnOffDevice() {
-		//metodo para apagar
+		// metodo para apagar
 	}
 
 	@Override

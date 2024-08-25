@@ -13,7 +13,7 @@ public class EventHandler {
 		document.setTitle("informe sueldos");
 		document.setCategory("FINANZAS");
 
-		//ahora podremos implementar n depatamentos sin tocar mas esta clase
+		// ahora podremos implementar n depatamentos sin tocar mas esta clase
 		document.setDepartament(departament.getDepartamentName());
 	}
 }

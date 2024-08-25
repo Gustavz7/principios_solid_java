@@ -2,17 +2,20 @@ package main.java.app.e.dip.solution;
 
 import java.util.List;
 
+import main.java.app.e.dip.problem.IFileGenerator;
+
 public class GeneradorDocumentos {
 
-	private ExcelDocumentGenerator excelGenerator;
+	private IFileGenerator generator;
 
-	public GeneradorDocumentos(ExcelDocumentGenerator excelGenerator) {
-		this.excelGenerator = excelGenerator;
+	public GeneradorDocumentos(IFileGenerator generator) {
+		this.generator = generator;
 	}
 
-	//Esto es un problema por que asi quisieramos generar otros documentos tendriamos que modificar esta clase
-	public ExcelDocument generar(List<Object> data) {
-		excelGenerator.setInputData(data);
-		return excelGenerator.generate();
+	// mediante interfaces esto ahora es altamente escalable sin cambios
+	public GeneratedFile generar(List<Object> data) {
+		generator.setInputData(data);
+		return generator.generate();
 	}
+
 }

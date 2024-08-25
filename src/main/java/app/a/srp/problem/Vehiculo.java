@@ -26,10 +26,10 @@ public class Vehiculo {
 	// este metodo inflinge el principio, ya que la acccion de cargar no la hace el
 	// auto mismo en este caso
 	public void cargarCombustible(Integer carga) {
-		Integer nivel = nivel_carga_combustible + carga;
+		int nivel = nivel_carga_combustible + carga;
 		if (nivel > 100) {
 			nivel = 100;
-			Integer sobra = carga-nivel;
+			int sobra = carga - nivel;
 			System.out.println("Cargando combustible, estanque al 100%, sobro :" + sobra);
 		} else {
 			this.nivel_carga_combustible = +carga;

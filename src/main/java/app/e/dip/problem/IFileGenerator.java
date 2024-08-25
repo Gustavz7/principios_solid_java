@@ -7,5 +7,6 @@ import main.java.app.e.dip.solution.GeneratedFile;
 public interface IFileGenerator {
 
 	public void setInputData(List<?> objects);
+
 	public GeneratedFile generate();
 }

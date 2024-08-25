@@ -3,19 +3,23 @@ package main.java.app.e.dip.solution;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ExcelDocumentGenerator {
+import main.java.app.e.dip.problem.IFileGenerator;
+
+public class ExcelDocumentGenerator implements IFileGenerator {
 	ExcelDocument file;
 
+	@Override
 	public void setInputData(List<?> objects) {
 		file = new ExcelDocument();
 		file.setPayload(obtainData(objects));
 	}
 
-	public ExcelDocument generate() {
+	@Override
+	public GeneratedFile generate() {
 		return new ExcelDocument();
 	}
-	
-	private List<String> obtainData(List<?> source){
+
+	private List<String> obtainData(List<?> source) {
 		List<String> result = new ArrayList<>();
 		source.forEach(element -> {
 			if (element instanceof String castedValue) {

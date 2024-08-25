@@ -22,9 +22,9 @@ public class Vehiculo {
 	public Integer getNivelCombustible() {
 		return nivel_carga_combustible;
 	}
-	
+
 	public void setNivelCombustible(Integer combustible) {
-		this.nivel_carga_combustible =combustible;
+		this.nivel_carga_combustible = combustible;
 	}
 
 }

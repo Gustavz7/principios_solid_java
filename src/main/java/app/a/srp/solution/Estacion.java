@@ -15,7 +15,7 @@ public class Estacion {
 		System.out.println("Cargando: " + carga + " de combustible");
 		Integer nivel = vehiculoEnCarga.nivel_carga_combustible + carga;
 		if (nivel > 100) {
-			Integer sobra = nivel - carga;
+			int sobra = nivel - carga;
 			nivel = 100;
 			vehiculoEnCarga.nivel_carga_combustible = 100;
 			System.out.println("Cargando combustible, estanque al 100%, sobro :" + sobra);
